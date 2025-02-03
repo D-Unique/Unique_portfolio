@@ -1,11 +1,16 @@
+import { ServiceCardProps } from "../enum";
+import { useInView } from "react-intersection-observer";
 
-interface ServiceCardProps {
-    name: string;
-  }
   
-  function ServiceCard({ name }: ServiceCardProps) {
+function ServiceCard({ name }: ServiceCardProps) {
+    const thraesholdList = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0];
+      const { ref, inView, entry} = useInView({ threshold: thraesholdList});
+      if (inView && entry) {
+          (entry.target as HTMLElement).style.transform = `scale(${entry.intersectionRatio})`;
+          (entry.target as HTMLElement).style.opacity = `${entry.intersectionRatio}`;
+        }
     return (
-        <div className=" text-lg flex flex-col flex-1 gap-7 h-[200px] w-[200px] bg-[rgba(255,255,255,0.1)] backdrop-blur-md text-white rounded-md shadow-lg p-[200px]  m-[200px] items-start justify-start transition delay-150 duration-300 ease-in-out hover:bg-indigo-500 focus:bg-indigo-500  group max-xs:text-xs max-xs:max-h-[300px] max-xs:w-[100px] max-xs:p-[100px] max-xs:m-[100px] max-xs:gap-3 ">
+        <div ref={ ref} id="servicecard" className=" text-lg flex flex-col flex-1 gap-7 h-[200px] w-[200px] bg-[rgba(255,255,255,0.1)] backdrop-blur-md text-white rounded-md shadow-lg p-[200px]  m-[200px] items-start justify-start transition ease-in-out hover:bg-indigo-500 focus:bg-indigo-500  group max-xs:text-xs max-xs:max-h-[300px] max-xs:w-[100px] max-xs:p-[100px] max-xs:m-[100px] max-xs:gap-3 ">
 
 
             
