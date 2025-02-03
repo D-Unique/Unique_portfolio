@@ -1,1 +1,29 @@
+@import "tailwindcss/preflight";
 @import "tailwindcss";
+
+
+:root {
+
+    --color-accent: #f0ad4e; /* Define a new accent color */
+  
+    --font-heading: 'Roboto', sans-serif; /* Customize the heading font */
+  
+    --spacing-extra-large: 8rem; /* Add a new spacing value */
+  
+  }
+  @theme {
+    --color-background: #764abc;
+    --color-lilac: #eabad2;
+    --color-light: #eae3f5;
+    --font-display: "Poppins", sans-serif;
+    --font-logo: "Roboto", sans-serif;
+    --breakpoint-xs: 26rem;
+      /* --color-mycol: red; */
+    }
+  
+
+  
+@utility mycol {
+    color: red;
+
+}

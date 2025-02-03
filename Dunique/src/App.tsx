@@ -1,16 +1,20 @@
 import './App.css'
+import HomePage from './pages/HomePage'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <HomePage />,
+  },
+  ])
 
 function App() {
-
-
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className='text-red-500'>App</h1>
-      </header>
-    </div>
-
+    <RouterProvider router={router} />
   )
+ 
 }
 
 export default App
