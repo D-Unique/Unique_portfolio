@@ -39,13 +39,13 @@ function Banner() {
         <div className=" p-5 m-10 col-auto text-[3rem] max-xs:text-[2rem] ">
             <h1 className=" text-white font-bold ">I am Emmanuel&nbsp;Unigwe</h1> 
         </div>
-        <div  style={{ border: 'solid', display: 'inline-block', padding:'10px 10px 10px 0', borderColor: "#857d83"}} className="border-2 text-[2em]p-20   text-white z-10 max-xs:text-[1em]">
+        <div  style={{ border: 'solid', display: 'inline-block', padding:'10px 10px 10px 0', borderColor: "#857d83"}} className="border-2 text-[2em] p-20   text-white z-10 max-xs:text-[1em]">
         <h1 id='change' className=' transition-all duration-1000 ease-in-out animate-pulse'></h1>
         </div>
 
       </div>
       
-      <div className="hover:bg-amber-700 p-5 m-5 col-auto w-10 h-10 bg-gray-900 max-xs:m-5 flex items-center justify-center z-10 absolute bottom-0 left-20 max-xs:left-[35px] max-xs:bottom-0">
+      <div className="hover:bg-amber-700 p-5 m-5 col-auto w-10 h-10 bg-amber-800 max-xs:m-5 flex items-center justify-center z-10 absolute bottom-0 left-20 max-xs:left-[35px] max-xs:bottom-0">
             
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className=" text-white w-6 h-6 max-xs:w-4 max-xs:h-4" viewBox="0 0 24 24">
               <path d="M12 14.121l-4.243-4.243-1.414 1.414 6.95 6.95 6.95-6.95-1.414-1.414z"/>

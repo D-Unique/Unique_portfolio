@@ -4,9 +4,9 @@ import Service from "../features/myService/component/Service"
 
 function HomePage() {
     return (
-        <div>
+        <div className="relative">
             
-                <NavBar />
+            <NavBar />
             <Banner />
             <Service />
     

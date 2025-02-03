@@ -19,10 +19,19 @@
     --font-logo: "Roboto", sans-serif;
     --breakpoint-xs: 26rem;
       /* --color-mycol: red; */
+    --animation-fadeOut: fadeOut 0.5s forwards;
+    }
+  
+    @keyframes fadeOut {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
   
 
-  
+@utility fade-out {
+    animation: fadeOut 2s forwards;
+}
+
 @utility mycol {
     color: red;
 

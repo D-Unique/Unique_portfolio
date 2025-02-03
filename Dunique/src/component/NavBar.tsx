@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function NavBar() {
     const [openMenu, setOpenMenu] = useState(false);
     return (
-      <nav className={`bg-white shadow sticky top-0 z-50 ${openMenu ? "max-xs:h-30" : "" }`}>
+      <nav className={`bg-white shadow sticky top-0 z-500 ${openMenu ? "max-xs:h-30" : "" }`}>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 right-2 flex items-center sm:hidden">
