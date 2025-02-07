@@ -1,5 +1,5 @@
 // NavBar component
-import React, { useState } from 'react'
+import { useState } from 'react'
 function NavBar() {
     const [openMenu, setOpenMenu] = useState(false);
     return (
