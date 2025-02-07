@@ -20,13 +20,19 @@
     --breakpoint-xs: 26rem;
       /* --color-mycol: red; */
     --animation-fadeOut: fadeOut 0.5s forwards;
+    --padding-pxs-0: 0;
     }
   
     @keyframes fadeOut {
       0% { opacity: 0; }
       100% { opacity: 1; }
     }
-  
+
+    @media (max-width: 416px) {
+      paddingxs {
+          padding: 0;
+      }
+  }
 
 @utility fade-out {
     animation: fadeOut 2s forwards;

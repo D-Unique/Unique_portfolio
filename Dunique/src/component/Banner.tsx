@@ -6,7 +6,7 @@ function Banner() {
     BannerChangeContant('change')
   }, )
   return (
-    <div className=" flex relative w-[100%] h-100  max-xs:h-[10] z-[10]" id="banner">
+    <div className=" flex relative w-[100%] h-screen  max-xs:h-[500px] z-[10]" id="banner">
       <div
         style={{ backgroundImage: 'url(/DSC_9035.jpg)'}}
         className=" flex-grow  bg-no-repeat bg-cover h-[160%] w-full max-xs:h-[65%] max-xs:w-[100%]  "

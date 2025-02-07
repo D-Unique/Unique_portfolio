@@ -1,10 +1,11 @@
 import ServiceCard from './ServiceCard';
 
 
+
 function Service() {
     const names = ["web design", "web development", "mobile app development"];
   return (
-      <div id="service" className="grid grid-rows-2 text-white w-full z-30 p-[20px] text-4xl max-xs:flex max-xs:flex-col max-xs:text-2xl max-xs:my-100 max-xs:w-full" >
+      <div id="service" className="grid grid-rows-2 text-white w-full h-screen z-30 p-[20px] text-4xl  font-bold max-xs:flex max-xs:flex-col max-xs:text-2xl max-xs:my-100 max-xs:w-full max-xs:h-full  " >
           <h2  className='my-100 text-white h-20 z-30 flex justify-center items-center row-span-3  max-xs:flex max-xs:justify-center max-xs:items-center max-xs:my-100 '>My Services</h2>
 
 
@@ -35,9 +36,8 @@ function Service() {
                   
               </div>
           </div>
-
-      
-    </div>
+         
+      </div>
   )
 }
 
