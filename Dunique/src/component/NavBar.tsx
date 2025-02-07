@@ -28,7 +28,7 @@ function NavBar() {
                   <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
                   <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Features</a>
                   <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-                  <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                  <a href="#about" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
                 </div>
               </div>
             </div>
@@ -36,18 +36,16 @@ function NavBar() {
         </div>
       
    
-      <div className={`sm:hidden ${openMenu ? "block absolute top-5 right-5 items-center" : "hidden"}`} id="mobile-menu">
+       <div className={`sm:hidden ${openMenu ? "block absolute top-5 right-5 items-center" : "hidden"}`} id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
             <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Features</a>
             <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
-            <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="#about" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</a>
           </div>
         </div>
       </nav>
-   
   )
 }
 
 export default NavBar
-
