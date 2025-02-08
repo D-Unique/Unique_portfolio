@@ -3,7 +3,7 @@ import { useState } from 'react'
 function NavBar() {
     const [openMenu, setOpenMenu] = useState(false);
     return (
-      <nav className={`bg-white shadow sticky top-0 z-500 ${openMenu ? "max-xs:h-30" : "" }`}>
+      <nav className={`bg-white shadow sticky top-0 z-500 ${openMenu ? "max-xs:h-50" : "" }`}>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 right-2 flex items-center sm:hidden">
@@ -20,15 +20,18 @@ function NavBar() {
               </button>
             </div>
             <div className="flex-1 flex ml-10 sm:items-stretch sm:justify-between">
-              <div className={`flex-shrink-0 h-{} w-11 sm:absolute top-8 left-20 sm:h-{20} sm:w-20 max-xs:absolute max-xs:left-10 max-xs:h-15 max-xs:w-15 shadow-lg object-contain ${openMenu ? "max-xs:top-22 " : "max-xs:top-10 "}`}>
+              <div className={`flex-shrink-0 h-{} w-11 sm:absolute top-8 left-20 sm:h-{20} sm:w-20 max-xs:absolute max-xs:left-10 max-xs:h-15 max-xs:w-15 shadow-lg object-contain ${openMenu ? "max-xs:top-42 " : "max-xs:top-10 "}`}>
                 <img src="/portfiolo logo.png" alt="Portfolio Logo" />
               </div>
               <div className="hidden sm:block sm:ml-6 absolute top-8 right-40">
-                <div className="flex space-x-4m gap-10">
-                  <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                  <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Features</a>
-                  <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-                  <a href="#about" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <div className="flex space-x-4 gap-6">
+                  <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">HOME</a>
+                  <a href="#service" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">SERVICES</a>
+                  <a href="#about" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">ABOUT ME</a>
+                  <a href="#skill" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">SKILLS</a>
+                  <a href="#portfolio" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">PORTFOLIO</a>
+                  <a href="#cilents" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">CILENTS</a>
+                  <a href="#contact" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">CONTACT</a>
                 </div>
               </div>
             </div>
@@ -38,10 +41,14 @@ function NavBar() {
    
        <div className={`sm:hidden ${openMenu ? "block absolute top-5 right-5 items-center" : "hidden"}`} id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-            <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Features</a>
-            <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
-            <a href="#about" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</a>
+          <a href="#" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text- font-medium">HOME</a>
+                  <a href="#service" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">SERVICES</a>
+                  <a href="#about" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block  px-3 py-2 rounded-md text-base font-medium">ABOUT ME</a>
+                  <a href="#skill" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">SKILLS</a>
+                  <a href="#portfolio" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">PORTFOLIO</a>
+                  <a href="#cilents" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">CILENTS</a>
+                  <a href="#contact" className="text-gray-800 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">CONTACT</a>
+            
           </div>
         </div>
       </nav>

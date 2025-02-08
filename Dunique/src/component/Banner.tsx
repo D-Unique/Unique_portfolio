@@ -1,10 +1,12 @@
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import BannerChangeContant from '../utils/BannerChangeContant';
 
 function Banner() {
+
   useEffect(() => {
     BannerChangeContant('change')
-  }, )
+    }, [])
+  
   return (
     <div className=" flex relative w-[100%] h-screen  max-xs:h-[500px] z-[10]" id="banner">
       <div
@@ -39,9 +41,11 @@ function Banner() {
         <div className=" p-5 m-10 col-auto text-[3rem] max-xs:text-[2rem] ">
             <h1 className=" text-white font-bold ">I am Emmanuel&nbsp;Unigwe</h1> 
         </div>
+        <Suspense fallback={<div>Loading...</div>}>
         <div  style={{ border: 'solid', display: 'inline-block', padding:'10px 10px 10px 0', borderColor: "#857d83"}} className="border-2 text-[2em] p-20   text-white z-10 max-xs:text-[1em]">
         <h1 id='change' className=' transition-all duration-1000 ease-in-out animate-pulse'></h1>
-        </div>
+          </div>
+        </Suspense>
 
       </div>
       

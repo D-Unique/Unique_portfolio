@@ -61,7 +61,7 @@ const Paragraph = styled.div`
 
     
   return (
-    <section id='#about' className=' flex flex-col gap-52  max-xs:flex  max-xs:flex-col max-xs:gap-[50px]'>
+    <section id='about' className=' flex flex-col gap-52  max-xs:flex  max-xs:flex-col max-xs:gap-[50px]'>
       <section id="aboutmain" style={{ marginTop: '40px'}}  className=" flex flex-col h-screen w-[100%] text-white  gap-30 max-xs:h-[100%] max-xs:w-[100%] max-xs:gap-20">
         <div className="flex  justify-center items-end  h-500 text-4xl font-bold mx-auto my-40 p-40 max-xs:h-[90%] max-xs:my-20 max-xs:p-20">
           <h2 >About Me</h2>
@@ -69,7 +69,7 @@ const Paragraph = styled.div`
         
         <div className=' flex-row  gap-40 items-center justify-center flex h-[90%] w-[100%] mx-auto max-sm:flex-row max-xs:h-[100%] max-xs:w-[100%] max-xs:gap-5 '>
   
-          <div ref={ref} className=" relative flex flax-col items-center justify-end w-[40%] h-full max-xs:h-[80] max-xs:w-[100%] , max-xs:flex-col max-xs:items-center max-xs:justify-end max-xs:gap-5">
+          <div ref={ref} className=" relative flex flax-col items-center justify-end w-[40%] h-full max-xs:h-[100%] max-xs:w-[100%] , max-xs:flex-col max-xs:items-center max-xs:justify-end max-xs:gap-5">
           <div className="absolute inset-0 bg-black opacity-85 h-150  z-11 max-xs:h-70"></div>
 {/*             
             <div className="absolute inset-0 bg-[gray] opacity-30 h-150 z-1"></div> */}
